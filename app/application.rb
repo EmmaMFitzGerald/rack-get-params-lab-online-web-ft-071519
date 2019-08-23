@@ -23,6 +23,7 @@ class Application
         resp.write "Cart is empty"
       else @@cart.each do |item|
         resp.write "#{cart}\n"
+        end
       end
     else 
       resp.write "Path Not Found"
