@@ -28,6 +28,10 @@ class Application
     else 
       resp.write "Path Not Found"
     end
+     
+    if req.path.match(/add/)
+  end
+
 
     resp.finish
   end
