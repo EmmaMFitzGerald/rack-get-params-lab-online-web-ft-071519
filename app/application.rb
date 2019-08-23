@@ -21,8 +21,7 @@ class Application
         resp.write "#{item}\n"
         end
       end
-     
-    if req.path.match(/add/)
+    elsif req.path.match(/add/)
  
       search_term = req.params["item"]
  
