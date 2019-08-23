@@ -33,11 +33,13 @@ class Application
  
       search_term = req.params["item"]
  
-      if @@items.include?(search_term)
+      if @@cart.include?(search_term)
         resp.write "#{search_term} is one of our items"
       else
         @@cart <<  search_term
       end
+    else 
+      resp.write "Path Not Found"
     end
 
 
