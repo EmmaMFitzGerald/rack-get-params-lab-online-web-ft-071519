@@ -35,7 +35,7 @@ class Application
  
       if @@items.include?(search_term)
         resp.write "#{search_term} is one of our items"
-        @@cart <<  search_term
+        @@cart << search_term
       else
         resp.write "We don't have that item"
       end
